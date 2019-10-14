@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.CmdLayer"
+    android:clickable="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/infDmgP1"
+                    android:tag="infDmgP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="Infect"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/dmgP1"
+                    android:tag="dmgP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="Damage"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/cmdDmgP1"
+                    android:tag="cmdDmgP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="CMD-DMG"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lifeGainP1"
+                    android:tag="gainP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:rotation="180"
+                    android:text="Gain"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/infDmgP2"
+                    android:tag="dmgP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="Infect"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/dmgP2"
+                    android:tag="dmgP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="Damage"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:id="@+id/cmdDmgP2"
+                    android:tag="cmdDmgP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:rotation="180"
+                    android:text="CMD-DMG"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lifeGainP2"
+                    android:tag="gainP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:rotation="180"
+                    android:text="Gain"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/botPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lifeGainP4"
+                    android:tag="gainP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Gain"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/cmdDmgP4"
+                    android:tag="cmdDmgP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="CMD-DMG"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/dmgP4"
+                    android:tag="dmgP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Damage"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/infDmgP4"
+                    android:tag="infDmgP4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Infect"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lifeGainP3"
+                    android:tag="gainP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Gain"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="2.5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/cmdDmgP3"
+                    android:tag="cmdDmgP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:text="CMD-DMG"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/dmgP3"
+                    android:tag="dmgP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:text="Damage"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+
+                <TextView
+                    android:id="@+id/infDmgP3"
+                    android:tag="infDmgP3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:text="Infect"
+                    android:onClick="clickedFrag"
+                    tools:ignore="OnClick"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
